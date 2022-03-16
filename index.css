@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "TwitchyTV";
+  src: url('fonts/Twitchy.TV.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roobert";
+  src: url('fonts/RoobertTRIAL-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url('fonts/RoobertTRIAL-BoldItalic.otf') format('opentype');
+  font-weight:  bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roobert";
+  src: url('fonts/RoobertTRIAL-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  src: url('fonts/RoobertTRIAL-Regular.otf') format('opentype');
+  font-family: "Roobert";
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  src: url('fonts/RoobertTRIAL-Light.otf') format('opentype');
+  font-family: "Roobert";
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  src: url('fonts/RoobertTRIAL-SemiBold.otf') format('opentype');
+  font-family: "Roobert";
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root{
+  --primary: #6441a5;
+  --secondary: #eaeaea;
+}
+body { 
+  background-color: #1a1a1a;
+  color: var(--secondary);
+  font-family: "Roobert";
+  margin: 0;
+}
+
+header{
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-family: sans-serif;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+h1{
+  font-family: 'TwitchyTV';
+  margin-bottom: 2rem;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > img {
+  cursor: pointer;
+}
+a{
+  color: var(--primary);
+}
+
+input {
+  padding: 1rem;
+  font-family: "Roobert";
+}
+input[type=text] {
+  background-color: #313131;
+  width: 16rem;
+  color: var(--secondary);
+  border-style: none;
+  border-radius: 5px;
+}
+input[type=submit]{
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-style: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+#twitch-embed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: -1;
+}
